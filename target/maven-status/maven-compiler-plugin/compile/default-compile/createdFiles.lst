@@ -1,2 +1,4 @@
 com\ejercicio\ejercicio\login\cac\data\Conexion.class
 com\ejercicio\ejercicio\login\cac\EjercicioLoginCac.class
+com\ejercicio\ejercicio\login\cac\data\UsuarioDAO.class
+com\ejercicio\ejercicio\login\cac\model\Usuarios.class

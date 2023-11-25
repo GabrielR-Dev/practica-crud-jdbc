@@ -6,19 +6,32 @@ public class Usuarios {
     
     private int id;
     private String nombre;
+    private String contracenia;
     private String apellido;
     private int edad;
     private String provincia;
+    private LocalDate fecha; 
+
+    public Usuarios() {
+    }
 
 
-    public Usuarios(String nombre, String apellido, int edad, String provincia) {
+    public Usuarios(String nombre, String contracenia, String apellido, int edad, String provincia) {
+        this.nombre = nombre;
+        this.contracenia = contracenia;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.provincia = provincia;
+        this.fecha = LocalDate.now();
+    }
+   public Usuarios(String nombre, String apellido, int edad, String provincia) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.provincia = provincia;
+        this.fecha = LocalDate.now();
     }
 
-    
     public int getId() {
         return id;
     }
@@ -33,6 +46,14 @@ public class Usuarios {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getContracenia() {
+        return contracenia;
+    }
+
+    public void setContracenia(String contracenia) {
+        this.contracenia = contracenia;
     }
 
     public String getApellido() {
@@ -51,7 +72,6 @@ public class Usuarios {
         this.edad = edad;
     }
 
-
     public String getProvincia() {
         return provincia;
     }
@@ -59,6 +79,16 @@ public class Usuarios {
     public void setProvincia(String provincia) {
         this.provincia = provincia;
     }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
+    }
+
+ 
 
     @Override
     public String toString() {
